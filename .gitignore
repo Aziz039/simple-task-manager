@@ -1,0 +1,69 @@
+# ==========================================
+# 1. OS & IDE Specific Files (Global)
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================================
+# 2. Global Secrets & Environment Variables
+# ==========================================
+# Ignore all .env files globally, except for the template files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.secret
+*.pem
+
+# ==========================================
+# 3. Backend (.NET)
+# ==========================================
+# Build results
+backend/bin/
+backend/obj/
+
+# Publish output
+backend/Publish/
+backend/out/
+
+# User-specific configuration and secrets
+backend/appsettings.Development.json
+backend/appsettings.Local.json
+
+# NuGet Packages (if local cache is used)
+*.nupkg
+packages/
+
+# ==========================================
+# 4. Frontend (Next.js / Node / pnpm)
+# ==========================================
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Next.js Build output
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.swc/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vercel/Deployment cache
+.vercel
