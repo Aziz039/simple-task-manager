@@ -67,3 +67,7 @@ pnpm-debug.log*
 
 # Vercel/Deployment cache
 .vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

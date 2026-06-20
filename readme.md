@@ -185,9 +185,9 @@ Tick these off as you go — each maps to a phase:
 
 1. From `taskmanager/`, create the Next.js app:
    ```bash
-   npx create-next-app@latest taskmanager-web
+   npx create-next-app@latest frontend
    # choose: TypeScript=Yes, App Router=Yes, Turbopack=Yes, Tailwind=Yes (your call)
-   cd taskmanager-web
+   cd frontend
    ```
 2. Add the API base URL to `.env.local`:
    ```bash
@@ -312,7 +312,7 @@ curl -X POST http://localhost:5xxx/api/todos -H "Content-Type: application/json"
 curl http://localhost:5xxx/api/todos
 ```
 
-7. **Wire the frontend immediately** (vertical slice). In `taskmanager-web`, create `app/todos/page.tsx` with a server-rendered list and a Client Component form:
+7. **Wire the frontend immediately** (vertical slice). In `frontend`, create `app/todos/page.tsx` with a server-rendered list and a Client Component form:
    ```tsx
    // app/todos/page.tsx  (Server Component — fetches the list)
    import { NewTodo } from "./new-todo";
